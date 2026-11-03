@@ -1,0 +1,6 @@
+$kind: http-request
+url: "http://localhost:3001/api/tareas/{{idPedro1}}"
+method: DELETE
+auth:
+  type: noauth
+order: 9000

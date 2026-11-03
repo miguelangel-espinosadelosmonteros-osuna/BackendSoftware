@@ -1,0 +1,14 @@
+$kind: http-request
+url: "http://localhost:3001/api/tareas/{{idPedro1}}"
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+      "descripcion": "Hackeada por Juan"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{tokenJuan}}"
+order: 17000

@@ -1,0 +1,18 @@
+$kind: http-request
+url: "http://localhost:3001/api/tareas"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "descripcion": "Entregar la actividad de JWT"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{tokenPedro}}"
+scripts:
+  - type: afterResponse
+    code: pm.environment.set('idPedro2', pm.response.json()._id);
+    language: text/javascript
+order: 12000

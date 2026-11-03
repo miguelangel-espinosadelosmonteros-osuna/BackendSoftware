@@ -1,0 +1,12 @@
+$kind: http-request
+url: "http://localhost:3001/api/tareas/{{idPedro1}}"
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+      "descripcion": "Cambio sin token"
+    }
+auth:
+  type: noauth
+order: 8000

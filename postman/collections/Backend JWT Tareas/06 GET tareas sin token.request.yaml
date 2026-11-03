@@ -1,0 +1,6 @@
+$kind: http-request
+url: "http://localhost:3001/api/tareas"
+method: GET
+auth:
+  type: noauth
+order: 6000

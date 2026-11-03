@@ -1,0 +1,14 @@
+$kind: http-request
+url: "http://localhost:3001/api/tareas/{{idPedro1}}"
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+      "descripcion": "Estudiar para el examen (repasar JWT)"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{tokenPedro}}"
+order: 14000

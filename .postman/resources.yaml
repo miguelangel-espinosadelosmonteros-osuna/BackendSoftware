@@ -1,0 +1,13 @@
+# Use this workspace to collaborate
+workspace:
+  id: f86eed8e-e93f-4e04-993e-660c305cca67
+
+cloudResources:
+  collections:
+    ../postman/collections/Backend JWT Tareas: 45b81ba5-f5ff-4bcd-87b9-9f1aeb6f6b53
+
+# All resources in the `postman/` folder are automatically registered in Local View.
+# Point to additional files outside the `postman/` folder to register them individually. Example:
+#localResources:
+#  collections:
+#    - ../tests/E2E Test Collection/

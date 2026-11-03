@@ -1,0 +1,14 @@
+$kind: http-request
+url: "http://localhost:3001/api/users"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "nombre": "Pedro",
+      "email": "pedro@test.com",
+      "password": "123456"
+    }
+auth:
+  type: noauth
+order: 22000

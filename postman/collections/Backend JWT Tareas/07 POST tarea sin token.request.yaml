@@ -1,0 +1,12 @@
+$kind: http-request
+url: "http://localhost:3001/api/tareas"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "descripcion": "Tarea sin token"
+    }
+auth:
+  type: noauth
+order: 7000

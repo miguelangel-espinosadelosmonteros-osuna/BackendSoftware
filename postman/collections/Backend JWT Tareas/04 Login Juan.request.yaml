@@ -1,0 +1,17 @@
+$kind: http-request
+url: "http://localhost:3001/api/users/login"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "email": "juan@test.com",
+      "password": "123456"
+    }
+auth:
+  type: noauth
+scripts:
+  - type: afterResponse
+    code: pm.environment.set('tokenJuan', pm.response.json().token);
+    language: text/javascript
+order: 4000

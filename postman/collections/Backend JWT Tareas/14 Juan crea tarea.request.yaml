@@ -1,0 +1,14 @@
+$kind: http-request
+url: "http://localhost:3001/api/tareas"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "descripcion": "Tarea de Juan"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{tokenJuan}}"
+order: 15000

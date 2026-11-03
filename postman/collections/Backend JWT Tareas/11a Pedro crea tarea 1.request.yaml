@@ -1,0 +1,18 @@
+$kind: http-request
+url: "http://localhost:3001/api/tareas"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "descripcion": "Estudiar para el examen de Ingeniería de Software"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{tokenPedro}}"
+scripts:
+  - type: afterResponse
+    code: pm.environment.set('idPedro1', pm.response.json()._id);
+    language: text/javascript
+order: 11000
